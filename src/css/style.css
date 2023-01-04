@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+:root {
+    --font-negrita: 'Fraunces', serif;
+    --cor-font-rodape: hsl(167, 40%, 24%);
+    --cor--branca: hsl(0, 0%, 100%);
+    --cor--preta: #000;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+
+.sobre .bloco {
+    display: flex;
+}
+
+.sobre .bloco img {
+    width: 50%;
+}
+
+.sobre .bloco .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 10px;
+    margin: auto auto;
+}
+
+.sobre .bloco .texto .titulo {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: var(--font-negrita);
+}
+
+.sobre .bloco .texto .paragrafo {
+    margin-bottom: 30px;
+}
+
+
+.sobre .bloco .texto .link-esquerdo,
+.sobre .bloco .texto .link-direito {
+    margin-left: -220px;
+    font-family: var(--font-negrita);
+}
+
+.sobre .bloco .texto .link-esquerdo {
+    border-bottom: 3px solid hsl(51, 100%, 49%);
+}
+
+.sobre .bloco .texto .link-direito {
+    border-bottom: 3px solid hsl(7, 99%, 70%);
+}
+
+.servicos {
+    display: flex;
+}
+
+.servicos .servico.acerola {
+    background: url('../img/desktop/image-graphic-design.jpg') no-repeat no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.servicos .servico.tangerina {
+    background: url('../img/desktop/image-photography.jpg') no-repeat no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.servicos .servico .servico-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -150px;
+}
+
+.servicos .servico .servico-info h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: var(--font-negrita);
+}
+
+.servicos .servico .servico-info p {
+    width: 350px;
+}
+
+.depoimentos {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.depoimentos h2 {
+    position: absolute;
+    padding-top: 30px;
+    font-family: var(--font-negrita);
+}
+
+.depoimentos div {
+    width: 100%;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.depoimentos img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.depoimentos p {
+    max-width: 370px;
+    font-size: 16px;
+    margin: auto auto;
+}
+
+.depoimentos .nome-cargo {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+.depoimentos .nome-cargo .nome {
+    font-size: 18px;
+    font-family: var(--font-negrita);
+    margin-top: -15px;
+}
+
+.depoimentos .nome-cargo .cargo {
+    font-size: 14px;
+}
+
+.projetos {
+    display: flex;
+}
+
+.projetos .bloco-projeto {
+    display: flex;
+}
+
+.projetos .bloco-projeto img {
+    width: 50%;
+}
+
+.rodape {
+    text-align: center;
+    height: 300px;
+    color: var(--cor-font-rodape);
+    background-color: hsl(168, 34%, 41%);
+}
+
+.rodape h3 {
+    font-size: 26px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.rodape .menu,
+.rodape .icones ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.rodape .menu li a,
+.rodape .icones li a {
+    font-size: 18px;
+    margin-right: 25px;
+    color: var(--cor-font-rodape);
+}
+
+.rodape .menu li a:hover,
+.rodape .icones li a:hover {
+    color: var(--cor--branca);
+    transition: 0.5s;
+}
+
+@media (max-width: 780px) {
+    .sobre .bloco {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .sobre .bloco-reverso {
+        flex-direction: column-reverse;
+    }
+
+    .sobre .bloco .texto {
+        text-align: center;
+    }
+
+    .sobre .bloco .texto .titulo {
+        font-size: 28px;
+    }
+
+    .sobre .bloco .texto .paragrafo {
+        font-size: 14px;
+    }
+
+    .sobre .bloco .texto .link-esquerdo,
+    .sobre .bloco .texto .link-direito {
+        margin-left: -0px;
+
+    }
+
+    .sobre .bloco img {
+        width: 100%
+    }
+
+    .servicos {
+        flex-direction: column;
+    }
+
+    .depoimentos,
+    .projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .depoimentos h2 {
+        margin-top: -950px;
+    }
+
+    .depoimentos div img {
+        margin-top: -60px;
+    }
+
+    .depoimentos .nome-cargo {
+        padding: 40px;
+    }
+
+    .depoimentos .nome-cargo .nome {
+        padding-top: 20px;
+    }
+
+}
