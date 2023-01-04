@@ -181,3 +181,13 @@
         font-size: 40px;
     }
 }
+
+@media (max-width: 480px) {
+    .cabecalho-container .logo  {
+        margin-left: -15px;
+    }
+
+    .cabecalho .titulo {
+        font-size: 30px;
+    }
+}
