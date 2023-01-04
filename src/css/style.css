@@ -248,5 +248,11 @@ body {
     .depoimentos .nome-cargo .nome {
         padding-top: 20px;
     }
+}
 
+@media (max-width: 480px) {
+    .depoimentos h2 {
+        margin-top: -990px;
+        font-size: 15px;
+    }
 }
